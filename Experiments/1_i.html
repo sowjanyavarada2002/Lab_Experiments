@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<center>
+		<h3><font color="red">Student Registration form</font></h3>
+		<br>
+		<br>
+		<form>	
+			<table>
+				<tr>
+					<td>RegNo</td>
+					<td><input type="text" name="RegNo" placeholder="Enter your RegNo"><br></td>
+				</tr>
+				<tr>
+					<td><br>Name</td>
+					<td><input type="text" name="Name" placeholder="Enter your Name"><br></td>
+				</tr>
+				<tr>
+					<td><br>Father Name</td>
+					<td><input type="text" name="father name" placeholder="Enter your Father Name"><br></td>
+				</tr>
+				<tr>
+					<td><br>Gender</td>
+					<td><input type="radio" name="gender" id="male" >
+						<label for="male">Male    </label></td>
+					<td><input type="radio" name="gender" id="female" >
+						<label for="female">Female</label></td>
+				</tr>
+				<tr>
+					<td>Date of birth</td>
+					<td>
+						<label for="DOB"></label>
+						<input type="date" name="birthday" id="DOB">
+					</td>
+				</tr>
+				<tr>
+					<td>Language Knowns</td>
+					<td><input type="checkbox" name="language" id="C">
+						<label for="C">C  </label>
+						<input type="checkbox" name="language" id="c++">
+						<label for="c++">C++  </label>
+						<input type="checkbox" name="language" id="python">
+						<label for="python">python  </label>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="checkbox" name="language" id="java">
+						<label for="java">java  </label>
+						<input type="checkbox" name="language" id="R">
+						<label for="R">R  </label>
+						<input type="checkbox" name="language" id="Julia">
+						<label for="Julia">Julia  </label>
+					</td>
+				</tr>
+				<tr>
+					<td>Branch</td>
+					<td><select name="branch" id="branch" >
+						<option for= "branch" value="select branch">SELECT BRANCH</option>
+						<option for="branch" value="CSE">CSE</option>
+						<option for="branch" value="IT">IT</option>
+						<option for="branch" value="AI&DS">AI&DS</option>
+						<option for="branch" value="AI&ML">AI&ML</option>
+						<option for="branch" value="ECE">ECE</option>
+						<option for="branch" value="EEE">EEE</option>
+						<option for="branch" value="ME">ME</option>
+						<option for="branch" value="CE">CE</option>
+					</td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td>
+						<label for="address"></label>	
+						<textarea id="address" placeholder="Enter your address" rows="5" cols="30"></textarea></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" name="submit" value="submit">     
+						<input type="reset" name="reset" value="reset" ></td>
+				</tr>
+			</table>
+		</form>
+	</center>
+</body>
+</html>

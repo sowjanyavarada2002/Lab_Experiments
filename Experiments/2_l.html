@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		::selection {
+		  color: red;
+		  background: yellow;
+		}
+		ul.a {
+		  list-style-position: outside;
+		}
+
+		ul.b {
+		  list-style-position: inside;
+		}
+		p::first-letter{
+			color: green;
+			font-size: xx-large;
+		}
+		p::first-line{
+			color: red;
+
+		}
+
+	</style>
+</head>
+<body>
+	<h1>DEMO CSS LIST PROPERTIES</h1>
+
+	<h2>list-style-position: outside (default):</h2>
+	<ul class="a">
+	  <li>Aritificial Intelligence - Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. </li>
+	  <li>Data Science - DataScience is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from noisy, structured and unstructured data,[1][2] and apply knowledge and actionable insights from data across a broad range of application domains.</li>
+	</ul>
+
+	<h2>list-style-position: inside:</h2>
+	<ul class="b">
+	  <li>Aritificial Intelligence - Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. </li>
+	  <li>Data Science - DataScience is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from noisy, structured and unstructured data,[1][2] and apply knowledge and actionable insights from data across a broad range of application domains. </li>
+	</ul>
+	<h1>Demo on PSUEDO-ELEMENTS</h1>
+	<p>Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The term may also be applied to any machine that exhibits traits associated with a human mind such as learning and problem-solving.</p>
+	
+</body>
+</html>

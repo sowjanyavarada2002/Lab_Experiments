@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS LINK DEMO</title>
+	<style type="text/css">
+		/*a.class_name:state, #id_name:state*/
+		body{
+			margin-top: 20px;
+		}
+		#link2:link{
+			color: green;
+			text-decoration: none;
+		}
+		#link2:visited{
+			color:purple;
+		}
+		#link2:hover{
+			color: red;
+			text-decoration: underline;
+		}
+		#link3{
+			border-style: solid;
+			border-color: green;
+			padding: 5px;
+			margin-top: 40px;
+		}
+		#link3:hover{
+			border-style: solid;
+			border-color: green;
+			background-color: green;
+			padding: 5px;
+			margin-top: 40px;
+			text-decoration: underline;
+		}
+		#link3{
+			color: blue;
+		}
+		#link4{
+			border-style: solid;
+			border-color: red;
+			background-color: red;
+			padding: 10px;
+			margin-top: 40px;
+		}
+		#link4:visited{
+			color:yellow;
+			text-decoration: dotted;
+		}
+		#link4:hover{
+			border-style: solid;
+			border-color: red;
+			background-color: green;
+			padding: 10px;
+			margin-top: 40px;
+			text-decoration: underline;
+		}
+		#link4:active{
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<h1>DEMO ON CSS LINKS</h1>
+		<h2>Link without any stylings</h2>
+		Go to svecw website : <a href="https://www.svecw.edu.in/" id="link1" target="_blank">click here</a> &nbsp;&nbsp;<br>
+		<h2>Links with different styles</h2>
+		Go to svecw results website : <a href="https://www.svecwexams.in/" id="link2" target="_blank">click here</a><br><br><br>
+		Go to codechef website: <a href="https://codechef.com/" id="link3" target="_blank">click here</a><br><br><br>
+		Go to hackerrank website : <a href="https://www.hackerrank.com/" id="link4" target="_blank">click here</a>
+	</center>
+</body>
+</html>
