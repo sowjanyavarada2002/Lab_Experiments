@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo on basic javascript</title>
+	<script type="text/javascript">
+		var name1; 
+		name1 = "Variable declared and created!"
+		name2 = "Variable directly created!"
+		function declaredVar() {
+			alert(name1 + "\n Syntax : var Variable_name = \"hello\" ");
+		}
+		function undeclaredVar(){
+			alert(name2 + "\n Syntax :  Variable_name = \"hello\" ");
+		}
+		function dataTypes(){
+			document.write("1.Number<br>"+"2.String <br>" +"3.Boolen<br>"+"4.Undefined<br>"+"5.Null");
+		}
+		function demoNumbers(){
+			document.write("Decimal numbers : Representing with base 10 nothing but normal numbers.<br>")
+			document.write("Octal numbers: Represents as 077, 098 <br>")
+			document.write("Hexadecimal numbers : Represents as 0x77, 0xA71 <br>")	
+		}
+		function demoStrings(){
+			document.write("String : It is sequence of characters surrounded by the single quotes or the double quotes")	
+		}
+		function demoBooleans(){
+			document.write("Boolen : It contains true or false.mainly represents with flag.");	
+		}
+		function demoUndefined(){
+			document.write("Undefined : Declaring the variable without any value. ");	
+		}
+		function demoNull(){
+			document.write("Null : The distinction between undefined and null is undefined means the value hasn‘t been set, whereas null means the value has been set to be empt")	
+		}
+		function datatypeConversions(){
+			document.write("3 + 3 = 6  <br> 3 + \"3\" = \"33\" (converted to the string : )  <br> 3 + 3 + \"3\" (first two integers add up and converted to the string and concated )<br>")	
+		}
+	</script>
+</head>
+<body>
+	<h1>Demo creation of variables</h1>
+	<input type="button" value="Variable creation - type1" onclick="declaredVar()"><br><br>
+	<input type="button" value="Variable creation - type2" onclick="undeclaredVar()">
+	<h1>Demo on datatypes in javascript</h1>
+	<input type="button" value="Types of datatypes" onclick="dataTypes()"><br><br>
+	<input type="button" value="Demo on numbers" onclick="demoNumbers()"><br><br>
+	<input type="button" value="Demo on string" onclick="demoStrings()"><br><br>
+	<input type="button" value="Demo on booleans" onclick="demoBooleans()"><br><br>
+	<input type="button" value="demo on undefined" onclick="demoUndefined()"><br><br>
+	<input type="button" value="demo on null" onclick="demoNull()"><br>
+	<h1>Demo on DataType conversions</h1>
+	<input type="button" value="datatype conversions" onclick="datatypeConversions()"><br>
+</body>
+</html>

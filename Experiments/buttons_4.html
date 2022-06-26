@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo on buttons</title>
+	<script type="text/javascript">
+		var num = window.prompt("enter the number");
+		function Factorial() {
+			var tab = window.open("about blank","_blank");
+			var fact = 1;
+			for(i = 2;i <= num;i++){
+				fact *= i;
+			}
+			tab.document.write("Factorial of "+num + " is " + fact);
+		}
+		function Fibonacci(argument) {
+			var tab = window.open("about blank","_blank");
+			var n1 = 0, n2 = 1;
+			tab.document.write("First " + num + " numbers in fibonacci series"+"<br>");
+			for(i = 1;i <= num;i++){
+				if(i == 1){
+					tab.document.write(n1+"<br>");
+				}
+				else if(i == 2){
+					tab.document.write(n2+"<br>");
+				}
+				else{
+					temp = n1 + n2;
+					n1 = n2;
+					n2 = temp;
+					tab.document.write(temp+"<br>");
+				}
+			}
+		}
+		function Primes(){
+			var tab = window.open("about blank","_blank");
+			tab.document.write("Prime numbers upto " + num +"<br>");
+			if(num < 2){
+				tab.document.write("No primes in given range")
+			}
+			else{
+				for(i = 2;i <= num;i++){
+					flag = 1;
+					for(j = 2;j < i;j++){
+						if(i % j == 0){
+							flag = 0;
+							break;
+						}
+					}
+					if(flag == 1){
+						tab.document.write(i+"<br>");
+					}
+				}
+			}
+		}
+		function Ispalindrome(argument) {
+			var tab = window.open("about blank","_blank");
+			dup_num = num;
+			rev_num = 0;
+			while(dup_num != 0){
+				rev_num = (rev_num * 10) +  (dup_num % 10);
+				dup_num = parseInt(dup_num / 10);
+			}
+			if(num == rev_num){
+				tab.document.write("Number is palindrome");
+			}
+			else{
+				tab.document.write("Not a plaindrome");
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="button" value="factorial" onclick="Factorial()">
+	<input type="button" value="fibonacci" onclick="Fibonacci()">
+	<input type="button" value="Primes" onclick="Primes()">
+	<input type="button" value="Ispalindrome" onclick="Ispalindrome()">
+</body>
+</html>
